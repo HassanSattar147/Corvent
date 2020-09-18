@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/5815bc5c9d.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts.css" />
+    <title>Corvent - Ventilator</title>
+  </head>
+
+  <body class="mont-regular">
+    <!-- header start -->
+    <section class="header-our-story pb-4">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg fixed-top custom-navbar-class navbar-dark"
+      >
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" alt="LOGO" style="height: 60px;" />
+        </a>
+
+        <button
+          class="navbar-toggler nav-button"
+          data-toggle="collapse"
+          data-target="#daNavBar"
+        >
+          <div class="bg-light line1"></div>
+          <div class="bg-light line2"></div>
+          <div class="bg-light line3"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="daNavBar">
+          <ul class="navbar-nav ml-auto text-uppercase mont-semi-bold">
+            <li class="nav-item mx-2">
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="ourStory.html" class="nav-link">Our Story</a>
+            </li>
+            <!--  -->
+
+            <li class="nav-item mx-2 dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Devices
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item nav-link px-3"
+                  href="ventilatorSpecs.html"
+                >
+                  Ventilator
+                </a>
+              </div>
+            </li>
+
+            <!--  -->
+            <li class="nav-item mx-2">
+              <a href="ourTeam.html" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="contactUs.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- header content -->
+      <div class="nav-bottom-rec-container">
+        <div class="nav-bottom-rec-upper-parent">
+          <div class="nav-bottom-rec-upper"></div>
+        </div>
+        <div class="nav-bottom-rec-lower"></div>
+      </div>
+      <!-- header content end -->
+    </section>
+    <!-- header end -->
+
+    <!-- specs -->
+    <!-- Carousel Section Start -->
+    <section id="carousel" class="py-5">
+      <div class="container">
+        <!-- Carousel-code start -->
+        <div class="row">
+          <div class="col mx-auto text-center">
+            <div
+              id="daSlider"
+              class="carousel slide pb-5"
+              data-target="carousel"
+            >
+              <!-- carousel Indicator Start -->
+              <ul class="carousel-indicators mt-5">
+                <li
+                  class="bg-dark active"
+                  data-target="#daSlider"
+                  data-slide-to="0"
+                ></li>
+                <li
+                  class="bg-dark"
+                  data-target="#daSlider"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  class="bg-dark"
+                  data-target="#daSlider"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  class="bg-dark"
+                  data-target="#daSlider"
+                  data-slide-to="3"
+                ></li>
+                <li
+                  class="bg-dark"
+                  data-target="#daSlider"
+                  data-slide-to="4"
+                ></li>
+              </ul>
+              <!-- carousel Indicator End -->
+
+              <!-- items start -->
+              <div
+                class="carousel-inner carousel-inner-specs d-flex align-items-center py-4"
+              >
+                <!-- item 1 -->
+                <div class="carousel-item active">
+                  <div class="row py-4 px-2">
+                    <div
+                      class="col-md-4 align-self-center text-center text-capitalize"
+                    >
+                      <i class="fas fa-cogs fa-5x"></i>
+                      <h3 class="mont-bold mt-4 gradient-text-simple">
+                        Wide range of functionality
+                      </h3>
+                    </div>
+                    <div class="col-md-8 align-self-center mt-4 mt-md-0">
+                      <p class="lead text-md-left text-center">
+                        Corvent offers 8 modes of operation namely PC-CMV,
+                        VC-CMV, PC-A/C, VC-A/C, PC-SIMV, AC-SIMV, PSV & PRVC. It
+                        also provides time, pressure, and flow triggers while
+                        the breaths are time or flow cycled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 1 end -->
+
+                <!-- item 2 -->
+                <div class="carousel-item">
+                  <div class="row py-4 px-2">
+                    <div
+                      class="col-md-4 align-self-center text-center text-capitalize"
+                    >
+                      <i class="fas fa-cogs fa-5x"></i>
+                      <h3 class="mont-bold mt-4 gradient-text-simple">
+                        Accurate Oxygen saturation control
+                      </h3>
+                    </div>
+                    <div class="col-md-8 align-self-center mt-4 mt-md-0">
+                      <p class="lead text-md-left text-center">
+                        Corvent ensures accurate oxygen saturation delivery
+                        through an ingeniously designed proportional valve. It
+                        does not require any flow sensors or electronic variable
+                        valves
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 end -->
+
+                <!-- item 3 -->
+                <div class="carousel-item">
+                  <div class="row py-4 px-2">
+                    <div
+                      class="col-md-4 align-self-center text-center text-capitalize"
+                    >
+                      <i class="fas fa-cogs fa-5x"></i>
+                      <h3 class="mont-bold mt-4 gradient-text-simple">
+                        Accurate Tidal Volume delivery
+                      </h3>
+                    </div>
+                    <div class="col-md-8 align-self-center mt-4 mt-md-0">
+                      <p class="lead text-md-left text-center">
+                        Corvent utilizes piston-cylinder mechanism to ensure
+                        accurate tidal volume delivery. An 800ml cylinder
+                        ensures that all the displaced volume gets into lung
+                        which is otherwise not possible by controlling volume
+                        through variable valves in pneumatic system
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 end -->
+
+                <!-- item 4 -->
+                <div class="carousel-item">
+                  <div class="row py-4 px-2">
+                    <div
+                      class="col-md-4 align-self-center text-center text-capitalize"
+                    >
+                      <i class="fas fa-cogs fa-5x"></i>
+                      <h3 class="mont-bold mt-4 gradient-text-simple">
+                        Safety features
+                      </h3>
+                    </div>
+                    <div class="col-md-8 align-self-center mt-4 mt-md-0">
+                      <p class="lead text-md-left text-center">
+                        Corvent performs self-check tests for any leakage,
+                        failure of electrical or mechanical component or for gas
+                        supply connection as the first step after it is switched
+                        on. It also offers wide range of alarms if any parameter
+                        is exceeded beyond limit and alarms as well as provides
+                        alternative solution in case of power failure or gas
+                        supply failure
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 4 end -->
+
+                <!-- item 5 -->
+                <div class="carousel-item">
+                  <div class="row py-4 px-2">
+                    <div
+                      class="col-md-4 align-self-center text-center text-capitalize"
+                    >
+                      <i class="fas fa-cogs fa-5x"></i>
+                      <h3 class="mont-bold mt-4 gradient-text-simple">
+                        Air filter regulator
+                      </h3>
+                    </div>
+                    <div class="col-md-8 align-self-center mt-4 mt-md-0">
+                      <p class="lead text-md-left text-center">
+                        Corvent utilizes air filter regulators whose filters can
+                        be changed upto any size to ensure delivery of pure
+                        medical air. It also utilizes N95 filters in inhale and
+                        exhale circuits to prevent any contamination
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 5 end -->
+              </div>
+              <!-- items end -->
+            </div>
+          </div>
+        </div>
+        <!-- Carousel-code End -->
+      </div>
+    </section>
+    <!-- Carousel Section End -->
+    <!-- specs end -->
+
+    <footer class="footer bg-dark p-4">
+      <h5
+        class="text-white m-0 text-center text-uppercase mont-black gradient-text"
+      >
+        Designed and Manufactured in Pakistan
+      </h5>
+    </footer>
+
+    <!-- jquery bundle -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>

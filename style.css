@@ -1,0 +1,376 @@
+:root {
+  --mainDark: #5eab9b;
+  --mainLight: #7bcbbe;
+  --secondaryDark: #3c6690;
+  --secondaryLight: #59b0c1;
+  --transMainDark: rgba(94, 171, 156, 0.5);
+  --transMainLight: rgba(123, 203, 190, 0.5);
+  --transSecondaryDark: rgba(60, 102, 144, 0.5);
+  --transSecondaryLight: rgba(89, 176, 193, 0.5);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --transBlack: rgba(0, 0, 0, 0.7);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    45deg,
+    var(--secondaryDark),
+    15%,
+    var(--mainLight),
+    var(--secondaryDark)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.gradient-text:hover {
+  background-position: right;
+}
+
+.gradient-text-simple {
+  background-image: linear-gradient(
+    45deg,
+    var(--secondaryDark),
+    var(--mainLight)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gradient-text-dark {
+  background-image: linear-gradient(
+    45deg,
+    var(--secondaryDark),
+    15%,
+    var(--mainDark),
+    var(--secondaryDark)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.gradient-text-dark:hover {
+  background-position: right;
+}
+
+/* navbar */
+
+.custom-navbar-class {
+  background: linear-gradient(to right, var(--mainLight), var(--secondaryDark));
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.custom-navbar-class::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--secondaryLight),
+    var(--mainLight)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.custom-navbar-class:hover::before {
+  opacity: 1;
+}
+
+.nav-item .active {
+  color: white !important;
+}
+
+.nav-link {
+  transition: all 0.3s;
+}
+
+.nav-item:hover .nav-link {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dropdown-menu a {
+  color: var(--mainDark) !important;
+  transition: all 0.3s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.nav-button {
+  outline: none !important;
+  border: none;
+}
+
+.change .line1 {
+  transform: rotate(-405deg) translate(-5px, 6px);
+  background-color: skyblue !important;
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+  background-color: skyblue !important;
+}
+
+/* navbar end */
+
+/* ------------------------ */
+/* ---------index---------- */
+/* ------------------------ */
+
+/* header */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("images/header.jpg") center/cover no-repeat;
+  min-height: 100vh;
+}
+
+.main-logo-sub-title {
+  animation-name: main-logo-sub-title-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.main-logo-title {
+  animation-name: main-logo-title-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.header-content-logo {
+  text-align: center;
+}
+
+.header-content-ik-quote {
+  line-height: 1.5;
+}
+
+.the-quote {
+  font-size: 3rem;
+}
+
+@keyframes main-logo-title-animation {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes main-logo-sub-title-animation {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* header end */
+
+/* ------------------------ */
+/* ---------our Story------ */
+/* ------------------------ */
+
+/* .nav-bottom-rec-container {
+  background: linear-gradient(
+    to right,
+    var(--transSecondaryDark),
+    var(--transMainLight)
+  );
+} */
+
+.nav-bottom-rec-upper-parent {
+  filter: drop-shadow(0px 0px 20px rgba(50, 50, 50, 0.5));
+}
+
+.nav-bottom-rec-upper {
+  height: 5vh;
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+  background-color: var(--mainDark);
+}
+
+.nav-bottom-rec-lower {
+  height: 3vh;
+  width: 80%;
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+  background-color: var(--secondaryDark);
+  box-shadow: 5px 10px 8px #888888;
+}
+
+/* ------------------------ */
+/* ----Ventilator Specs---- */
+/* ------------------------ */
+
+.carousel-inner-specs {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 10px;
+  background: rgb(245, 245, 245);
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel-inner-specs:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+@media all and (max-width: 768px) {
+  .carousel-inner-specs {
+    min-height: 80vh;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .carousel-item .mont-bold {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .carousel-inner-specs {
+    min-height: 55vh;
+  }
+}
+
+
+
+/* ------------------------ */
+/* ----Our Team---- */
+/* ------------------------ */
+
+
+#team .row .card{
+  height: 100%;
+}
+
+
+
+/* ------------------------ */
+/* ----Contact Us---- */
+/* ------------------------ */
+
+.contact-us a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-us .fa-linkedin {
+  color: #0072b1;
+}
+
+.contact-us .fa-twitter {
+  color: #00acee;
+}
+
+.contact-us .fa-facebook-square {
+  color: #3b5998;
+}
+
+.contact-us .fa-envelope {
+  color: #0072b1;
+}
+
+.contact-us .fa-phone {
+  color: #3b5998;
+}
+
+.anim1,
+.anim2,
+.anim3,
+.anim4,
+.anim5 {
+  transform: translateX(150px);
+  opacity: 0;
+}
+
+.anim1 {
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.anim2 {
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.anim3 {
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.anim4 {
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.anim5 {
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

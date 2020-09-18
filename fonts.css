@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.mont-black{
+    font-family: Montserrat !important;
+    font-weight: 900 !important;
+}
+
+.mont-extra-bold{
+    font-family: Montserrat !important;
+    font-weight: 800 !important;
+}
+
+.mont-bold{
+    font-family: Montserrat !important;
+    font-weight: 700 !important;
+}
+
+.mont-semi-bold{
+    font-family: Montserrat !important;
+    font-weight: 600 !important;
+}
+
+.mont-medium{
+    font-family: Montserrat !important;
+    font-weight: 500 !important;
+}
+
+.mont-regular{
+    font-family: Montserrat !important;
+    font-weight: 400 !important;
+}
+
+.mont-light{
+    font-family: Montserrat !important;
+    font-weight: 300 !important;
+}
+
+.mont-extra-Light{
+    font-family: Montserrat !important;
+    font-weight: 200 !important;
+}
+
+.mont-thin{
+    font-family: Montserrat !important;
+    font-weight: 100 !important;
+}
