@@ -29,6 +29,10 @@
   transition: background-position 1s;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .gradient-text:hover {
   background-position: right;
 }
